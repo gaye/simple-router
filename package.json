@@ -1,0 +1,23 @@
+{
+  "name": "simple-router",
+  "version": "1.0.0",
+  "main": "./build/router",
+
+  "authors": [ "gaye <gareth.aye@gmail.com>" ],
+
+  "dependencies": {
+    "alameda": "0.2.0",
+    "lodash": "3.5.0",
+    "react": "0.13.1"
+  },
+
+  "devDependencies": {
+    "babel": "4.7.16",
+    "chai": "2.1.2",
+    "mocha": "2.2.1"
+  },
+
+  "scripts": {
+    "postinstall": "make"
+  }
+}
