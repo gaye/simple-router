@@ -1,5 +1,5 @@
-simple-router
-=============
+simplerouter
+============
 
 Yet another client-side js router!
 
