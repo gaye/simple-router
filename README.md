@@ -14,6 +14,9 @@ var router = new Router({
 
 router.route = state => state.color;
 
+/**
+ * @return {Promise} promise that accepts with created view.
+ */
 router.initView = viewName => {
   var element = document.createElement('div');
   // ... initialize element
