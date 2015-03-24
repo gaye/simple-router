@@ -1,6 +1,6 @@
 {
   "name": "simplerouter",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "./build/router",
 
   "authors": [ "gaye <gareth.aye@gmail.com>" ],
@@ -18,6 +18,6 @@
   },
 
   "scripts": {
-    "postinstall": "make"
+    "postinstall": "npm install babel@4.7.16 && make"
   }
 }
