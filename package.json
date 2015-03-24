@@ -1,7 +1,8 @@
 {
   "name": "simplerouter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./build/router",
+  "repository": "https://github.com/gaye/simplerouter.git",
 
   "authors": [ "gaye <gareth.aye@gmail.com>" ],
 
