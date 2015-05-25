@@ -1,7 +1,6 @@
 {
   "name": "simplerouter",
   "version": "1.2.0",
-  "main": "./router.js",
   "repository": "https://github.com/gaye/simplerouter.git",
 
   "authors": [ "gaye <gareth.aye@gmail.com>" ],
