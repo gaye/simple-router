@@ -1,23 +1,14 @@
 {
   "name": "simplerouter",
-  "version": "1.0.4",
-  "main": "./build/router",
+  "version": "1.2.0",
+  "main": "./router.js",
   "repository": "https://github.com/gaye/simplerouter.git",
 
   "authors": [ "gaye <gareth.aye@gmail.com>" ],
 
-  "dependencies": {
-    "lodash": "3.5.0"
-  },
-
   "devDependencies": {
     "alameda": "0.2.0",
-    "babel": "4.7.16",
     "chai": "2.1.2",
     "mocha": "2.2.1"
-  },
-
-  "scripts": {
-    "postinstall": "npm install babel@4.7.16 && make"
   }
 }

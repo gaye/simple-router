@@ -16,13 +16,13 @@ suite('Router', () => {
       defaultState: { count: 0 }
     });
 
-    router.initView = (viewName) => {
+    router.initView = viewName => {
       var view = document.createElement('div');
       view.textContent = viewName;
       return Promise.resolve(view);
     };
 
-    router.route = (state) => state.count;
+    router.route = state => state.count;
 
     return router.start();
   });
@@ -35,7 +35,7 @@ suite('Router', () => {
 
   test('initialization', () => {
     assert.equal(activeView().textContent, '0');
-    assert.equal(document.location.hash, '#{"count":0}');
+    assert.deepEqual(Router.readCache(), { count: 0 });
   });
 
   test('#getState', () => {
@@ -45,7 +45,7 @@ suite('Router', () => {
   test('#setState', () => {
     return router.setState({ count: 1 }).then(() => {
       assert.equal(activeView().textContent, '1');
-      assert.equal(document.location.hash, '#{"count":1}');
+      assert.deepEqual(Router.readCache(), { count: 1 });
     });
   });
 });
